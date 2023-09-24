@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3{
+    columns: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+a{
+    color: #202020;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(55, 124, 197);
+    text-decoration: underline;
+}
+
+p{
+    margin: 8px 4px;
+}
+ol {
+    margin-left: 10px;
+}
+ol li{
+    padding: 5px 10px;
+}
+ol li:nth-child(odd){
+    background-color: rgb(151, 151, 151);
+}
+.btn {
+    padding: 5px 10px;
+    background: #1c5c9f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.container{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #280f36;
+    background-color: #e5e5e5;
+    max-width: 900px;
+    margin: auto;
+}
+footer{
+    min-height: 100px;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 15px;
+}
+
+
+.card {
+    background-color: white;
+    border-left: 10px solid red;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.card:first-child{
+    background-color: rgb(196, 250, 197);
+}
+.card:last-child{
+    background-color: rgb(196, 255, 189);
+}
+.info .card {
+    border-right: 10px solid red;
+    border-left: none;
+}
+.avatar{
+    min-width: 300px;
+    margin-right: 10px;
+}
+.avatar img {
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px #666666;
+    margin: 10px;
+    max-width: 300px;
+}
+.about_me {
+    display: flex;
+    align-items: center;
+}
+.feedback{    
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+}
+th {
+    background: #585858;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+ td:first-child{
+    background-color: rgb(103, 103, 103);
+}
+table tr:nth-child(even) {
+    background: #cbcbcb;
+}
+.form-group {
+    display: flex;
+}
+.form-item {
+    width: 100%;
+    margin-right: 20px;
+}
+.form-group .form-item:last-child {
+    margin-right: 0px;
+}
+.form h2 {
+    text-align: center;
+}
+.form-item label {
+    display: block;
+    font-family: inherit;
+}
+.form-item input, .form-item textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 15px 0 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+@media (max-width: 650px){
+    .about_me{
+        display: block;
+    }
+    .avatar img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
